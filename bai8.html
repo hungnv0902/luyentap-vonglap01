@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button type="button" onclick="game()" id="game">Chơi</button>
+    <script>
+        function game() {
+            let a = parseInt(prompt("Nhập giá trị bắt đầu :"));
+            let b = parseInt(prompt("Nhập giá trị kết thúc :"));
+            let c = Math.floor(Math.random()*(b-a)) + a;
+            let d = parseInt(prompt("Nhập giá trị mà bạn đoán :"));
+            if(c == d){
+                alert("Bạn chiến thắng");
+            } else {
+                while (c != d) {
+                    alert("Sai rồi! Thử lại");
+                    let d = parseInt(prompt("Nhập giá trị mà bạn đoán :"));
+                    if (c != d) {
+
+                    } else {
+                        alert("Bạn đoán đúng rồi!")
+                        break;
+                    }
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

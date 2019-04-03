@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let int = parseInt(prompt("Nhập số lượng số Fibonacci :"))
+    let a = 0;
+    let b = 1;
+    let dpy = a + b;
+    let number = 2;
+    for (number = 2; number < int; number ++) {
+        let x;
+        x = b;
+        b = a + b;
+        a = x;
+        dpy = dpy + b;
+    }
+
+    alert(dpy);
+</script>
+</body>
+</html>

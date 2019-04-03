@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let number = 1;
+        let dis = "Dãy như sau: ";
+        let x = 1;
+        for (number = 2 ; number <= 101; number ++) {
+            if (x % 3 ==0 && x % 5 != 0){
+                x = "Fizz"
+            };
+            if (x % 3 !=0 && x % 5 == 0){
+                x = "Buzz"
+            };
+
+            if (x % 3 ==0 && x % 5 ==0){
+                x = "BuzzFizz"
+            };
+
+            dis = dis + " " + x;
+
+            x = number;
+        }
+
+        alert(dis);
+    </script>
+</body>
+</html>
